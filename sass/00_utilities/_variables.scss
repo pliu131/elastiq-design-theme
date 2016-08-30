@@ -1,0 +1,52 @@
+// Custom Colors
+$color__accent: #50E3C2;
+
+// From variables-site/_colors.scss
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $color__accent;
+$color__link-visited: $color__accent;
+$color__link-hover: darken($color__accent, 20%);
+$color__text-main: #4A4A4A;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+// From variables-site/_typography.scss
+$font__main: "proxima-nova", sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// From variables-site/_structure.scss
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+
+// // Settings for Susy Grid Framework
+// $susy: (
+//   columns: 12,
+//   global-box-sizing: border-box,
+//   column-width: 63px,
+//   gutters: 20px/63px
+// );
+
+// Sass Map Containing Media Query Breakpoints
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop-small: 992px,
+  desktop-large: 1200px
+);

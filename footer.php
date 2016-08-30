@@ -10,10 +10,9 @@
  */
 
 ?>
+  </div><!-- #content -->
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo" style="display: none">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'elastiqdesign' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'elastiqdesign' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
