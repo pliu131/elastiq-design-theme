@@ -5,31 +5,29 @@
 
 .client {
   &__article {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   &__name {
     font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 6px;
     font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   &__tagline {
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
     font-weight: 400;
-    margin: 0;
   }
 
   &__description {
     font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
     color: #5C5C5C;
-    margin: 0;
-
-    a {
-      text-transform: uppercase;
-    }
   }
 
   &--featured {
@@ -38,25 +36,44 @@
     }
 
     .client__article {
-      padding-top: 45px;
-      padding-bottom: 45px;
+      padding-top: 35px;
+      padding-bottom: 36px; // for the border
     }
 
     .client__name {
       font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 12px;
     }
 
     .client__tagline {
       font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 12px;
     }
 
     .client__description {
       font-size: 21px;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+
+    a[rel="shortlink"] {
+      text-transform: uppercase;
+      font-size: 21px;
+      line-height: 24px;
+      display: inline-block;
     }
   }
 
-  &--showcase {}
-  &--private {}
+  &--private {
+    .client__name {
+      font-size: 36px;
+      line-height: 48px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .clients-section {

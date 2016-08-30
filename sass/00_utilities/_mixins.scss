@@ -22,3 +22,14 @@
 @mixin clearfix-after() {
   clear: both;
 }
+
+// Process Steps
+%list-reset {
+  margin: 0;
+  padding: 0; 
+}
+
+// For baseline measurements
+@function baseline($multiplier: 1) {
+  @return $multiplier * 24px;
+}

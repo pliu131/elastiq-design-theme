@@ -1,11 +1,15 @@
 .button {
+  display: inline-block;
   background-color: $color__accent;
   color: white;
-  padding: 12px 40px;
+  padding: 6px 24px;
   border-radius: 100px; // overcompensation
   color: white;
-  font-size: 21px;
   letter-spacing: 0.02em;
   font-weight: 100;
   text-transform: uppercase;
+
+  &--large {
+    padding: 12px 48px;
+  }  
 }

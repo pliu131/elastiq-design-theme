@@ -27,9 +27,8 @@
       <h3 class="client__tagline"><?php the_field('tagline') ?></h3>
       <p class="client__description">
         <?php the_field('description') ?>
-        <br><br>
-        <?php the_shortlink('View Case Study →') ?>
       </p>
+      <?php the_shortlink('View Case Study →') ?>
     </article>
   </li><!-- .client -->
 <?php endwhile; endif; wp_reset_postdata(); wp_reset_query(); ?>

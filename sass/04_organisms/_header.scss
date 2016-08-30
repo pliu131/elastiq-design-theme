@@ -1,0 +1,162 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.site-branding {
+  float: left;
+  width: auto;
+}
+
+.site-title {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 0;
+
+  span {
+    font-weight: 100;
+    color: $color__text-light;
+  }
+}
+
+
+
+
+// Should be used in the future!
+.menu {
+  .nav-menu {
+    .page_item {
+      a {
+        @include font-size(1);
+        line-height: 1;
+        padding: 0.25em 1.5em;
+        color: $color__text-light;
+        display: inline-block;
+      }
+
+      &.current_page_item {
+        a {
+          color: $color__text-dark;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.main-navigation {
+  float: right;
+  width: auto;
+
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: -999em;
+      z-index: 99999;
+
+      ul {
+        left: -999em;
+        top: 0;
+      }
+
+      li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
+
+      a {
+        width: 200px;
+      }
+
+      :hover > a,
+      .focus > a {
+      }
+
+      a:hover,
+      a.focus {
+      }
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    float: left;
+    position: relative;
+
+    &:hover > a,
+    &.focus > a {
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+  }
+}
+
+
+
+
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+  }
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}

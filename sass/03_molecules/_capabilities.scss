@@ -1,0 +1,20 @@
+.capability {
+  @include span(4 of 12);
+
+  &:last-child {
+    @include span(4 of 12 last);
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__services {
+    @extend %list-reset;
+    list-style: none;
+    color: darken(white, 20%);
+  }
+}

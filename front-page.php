@@ -22,7 +22,7 @@ get_header();
     <header class="page-header page-header--home">
       <div class="container">
         <h1 class="page-header__title">A <strong>web development</strong> and <strong>user experience design studio</strong>, focused on creating  efficient and elegant solutions that <strong>solve real problems</strong> for your organization.</h1>
-        <a class="button" href="#">START A PROJECT →</a>
+        <a class="button button--large" href="#">START A PROJECT →</a>
       </div>
     </header>
 

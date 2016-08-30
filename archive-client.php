@@ -83,7 +83,7 @@ get_header(); ?>
 
         if ($private_work -> have_posts()) : while ($private_work -> have_posts()) : $private_work -> the_post(); 
         ?>
-        <li class="client">
+        <li class="client client--private">
           <h2 class="client__name"><?php the_title() ?></h2>
         </li>
       <?php endwhile; endif; wp_reset_postdata(); ?>
