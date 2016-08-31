@@ -2,11 +2,11 @@
 <section class="page-section page-section--dark">
   <div class="container">
     <header class="page-section__header">
-      <h1 class="page-section__title">Capabilities</h1>
+      <h3 class="page-section__title">Capabilities</h3>
     </header>
 
     <div class="capability">
-      <h2 class="capability__title">User Experience Design</h2>
+      <h4 class="capability__title">User Experience Design</h4>
       <ul class="capability__services">
         <li>User Research</li>
         <li>Usability Testing</li>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="capability">
-      <h2 class="capability__title">Web Development</h2>
+      <h4 class="capability__title">Web Development</h4>
       <ul class="capability__services">
         <li>Front-end Development</li>
         <li>Custom HTML, CSS, and JavaScript</li>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="capability">
-      <h2 class="capability__title">Technologies</h2>
+      <h4 class="capability__title">Technologies</h4>
       <ul class="capability__services">
         <li>Adobe Creative Suite (Photoshop, InDesign, and Illustrator)</li>
         <li>PowerPoint and Keynote for Presentation Deck Designs</li>

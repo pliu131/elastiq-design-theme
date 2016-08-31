@@ -14,6 +14,9 @@
     <h1 class="page-header__title">
       Work / <br><?php the_title(); ?>
     </h1>
+    <p class="page-header__description">
+      <?php the_field('case_study_objective'); ?>
+    </p>
     <!-- <a class="button" href="<?php the_field('project_link'); ?>">View Live Project →</a> -->
   </div>
 </header>
@@ -21,8 +24,6 @@
 <section class="page-section">
   <article class="case-study" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="container">
-      <h2 class="case-study__objective"><?php the_field('case_study_objective'); ?></h2>
-
       <div class="case-study__content">
         <?php
         the_content( sprintf(

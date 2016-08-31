@@ -1,20 +1,22 @@
 .capability {
-  @include span(4 of 12);
+  margin-bottom: baseline(2);
 
-  &:last-child {
-    @include span(4 of 12 last);
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    @include span(4 of 12);
+    margin-bottom: 0;
+
+    &:last-child {
+      @include span(4 of 12 last);
+    }
   }
 
   &__title {
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 15px;
+    @extend %h4;
   }
 
   &__services {
     @extend %list-reset;
     list-style: none;
-    color: darken(white, 20%);
+    color: $color__text-light;
   }
 }

@@ -1,5 +1,9 @@
 // Custom Colors
 $color__accent: #50E3C2;
+$dark-gray: #4A4A4A;
+$light-gray: #ABABAB;
+$color__background-light: #FCFCFC;
+$color__background-dark: #5C5C5C;
 
 // From variables-site/_colors.scss
 $color__background-body: #fff;
@@ -8,6 +12,7 @@ $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
+$color__background-dark: $dark-gray;
 
 $color__text-screen: #21759b;
 $color__text-input: #666;
@@ -36,19 +41,69 @@ $font__line-height-pre: 1.6;
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-
-// // Settings for Susy Grid Framework
-// $susy: (
-//   columns: 12,
-//   global-box-sizing: border-box,
-//   column-width: 63px,
-//   gutters: 20px/63px
-// );
-
 // Sass Map Containing Media Query Breakpoints
 $breakpoints: (
   mobile: 480px,
   tablet: 768px,
   desktop-small: 992px,
   desktop-large: 1200px
+);
+
+
+$h1-font-sizes: (
+  null: 36px,
+  mobile: 36px,
+  tablet: 48px,
+  desktop-small: 60px
+  );
+
+$h2-font-sizes: (
+  null: 32px,
+  mobile: 32px,
+  tablet: 36px,
+  desktop-small: 48px
+  );
+
+$h3-font-sizes: (
+  null: 21px, 
+  mobile: 21px,
+  tablet: 24px,
+  desktop-small: 36px
+  );
+
+$h4-font-sizes: (
+  null: 18px,
+  mobile: 18px,
+  tablet: 21px,
+  desktop-small: 24px
+  );
+
+$h5-font-sizes: (
+  null: 16px,
+  mobile: 16px,
+  tablet: 18px,
+  desktop-small: 21px
+  );
+
+$h6-font-sizes: (
+  null: 14px,
+  mobile: 14px,
+  tablet: 16px,
+  desktop-small: 18px
+  );
+
+$p-font-sizes: (
+  null: 14px,
+  mobile: 14px,
+  tablet: 16px,
+  desktop-small: 16px
+  );
+
+// SUSY STUFF
+$susy: (
+  columns: 12,
+  container: 960px,
+  global-box-sizing: border-box,
+  column-width: 60px,
+  gutters: 20px/60px,
 );

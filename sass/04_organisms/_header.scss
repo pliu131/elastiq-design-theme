@@ -1,58 +1,65 @@
-.site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.site-branding {
-  float: left;
-  width: auto;
-}
-
-.site-title {
-  font-size: 24px;
-  line-height: 1;
-  margin-bottom: 0;
-
-  span {
-    font-weight: 100;
-    color: $color__text-light;
-  }
-}
-
-
-
-
 // Should be used in the future!
-.menu {
-  .nav-menu {
-    .page_item {
-      a {
-        @include font-size(1);
-        line-height: 1;
-        padding: 0.25em 1.5em;
-        color: $color__text-light;
-        display: inline-block;
-      }
+.main-navigation {
 
-      &.current_page_item {
-        a {
-          color: $color__text-dark;
-          font-weight: 600;
-          text-decoration: underline;
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    .menu-primary-menu-container {
+      @include clearfix;
+      display: inline-block;
+      margin-right: 12px;
+
+      .nav-menu {
+        float: left;
+
+        .page_item, .menu-item {
+          a {
+            @include font-size(1);
+            line-height: 48px;
+            padding-left: 18px;
+            padding-right: 18px;
+            color: $color__text-light;
+            display: inline-block;
+
+            &:hover, &:active, &:focus {
+              color: darken($color__text-light, 20%);
+            }
+          }
+
+          &.current-menu-item {
+            a {
+              color: $color__text-dark;
+              font-weight: 600;
+            }
+          }
         }
       }
     }
   }
 }
 
+.menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 12px;
+}
+
 .main-navigation {
   float: right;
-  width: auto;
+  width: 100%;
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    width: auto;
+  }
+
+  .button {
+    display: none; 
+
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      display: inline-block;
+      float: right;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
 
   ul {
     display: none;
@@ -100,8 +107,10 @@
   }
 
   li {
-    float: left;
-    position: relative;
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      float: left;
+      position: relative;
+    }
 
     &:hover > a,
     &.focus > a {
@@ -131,10 +140,30 @@
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+// this is dirty.
+@media screen and (max-width: 767px) {
+  .main-navigation.toggled {
+    ul {
+      background-color: white;
+      margin-left: -16px;
+      margin-right: -16px;
+      border-bottom: 1px solid $light-gray;
+
+      li {
+        padding: 6px 16px;
+        text-align: center;
+        border-top: 1px solid $light-gray;
+        color: $color__background-light;
+      }
+    }
+  }
+}
+
+@include breakpoint(map-get($breakpoints, tablet)) {
   .menu-toggle {
     display: none;
   }
+
   .main-navigation ul {
     display: block;
   }

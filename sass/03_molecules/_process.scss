@@ -2,23 +2,62 @@ $colors-list: #E67E22 #D0021B #9013FE #4A90E2 #50E3C2;
 
 .process-steps {
   @extend %list-reset;
+  @include clearfix;
 
   .process-step {
-    @include span(8 of 12);
     list-style-type: none;
+    margin-bottom: baseline(1);
+
+    &__circle {
+      border-radius: 50%;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      width: baseline(6);
+      height: baseline(6);
+
+      @include breakpoint(map-get($breakpoints, desktop-small)) {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+      }
+    }
+
+    &__name {
+      @extend %h4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 0.02em;
+    }
+
+    &__title {
+      font-weight: 100;
+    }
+
+    &__content {
+      margin-top: baseline(0.5);
+    }
 
     @each $current-color in $colors-list {
       $i: index($colors-list, $current-color);
 
       &:nth-child(#{$i}) {
-        @include push(($i - 1) of 12);
+        @include breakpoint(map-get($breakpoints, desktop-small)) {
+          @include push(($i - 1) of 12);
+        }
 
         .process-step__name:before {
+          font-size: 2.5em;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 72px;
           color: rgba(255,255,255,0.5);
           content: '#{$i}';
         }
@@ -29,35 +68,30 @@ $colors-list: #E67E22 #D0021B #9013FE #4A90E2 #50E3C2;
       }
     }
 
-    &__title {
-      @include span(2 of 8);
-      font-weight: 100;
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      @include span(12 of 12);
+
+      &__title {
+        @include span(3 of 12);
+        font-weight: 100;
+      }
+
+      &__content {
+        @include span(9 of 12 last);
+      }
     }
 
-    &__circle {
-      width: 100%;
-      padding-bottom: 100%;
-      height: 0;
-      background-color: #E67E22;
-      border-radius: 50%;
-      position: relative;
-      text-align: center;
-    }
+    @include breakpoint(map-get($breakpoints, desktop-small)) {
+      @include span(8 of 12);
 
-    &__name {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      color: white;
-      font-size: 20px;
-    }
+      &__title {
+        @include span(2 of 8);
+        font-weight: 100;
+      }
 
-    &__content {
-      @include span(6 of 8 last);
+      &__content {
+        @include span(6 of 8 last);
+      }
     }
   }
 }

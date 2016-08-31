@@ -5,71 +5,63 @@
 
 .client {
   &__article {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  &__name {
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 6px;
-    font-weight: 100;
-  }
-
-  &__tagline {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 6px;
-    font-weight: 400;
+    padding-top: baseline(0.5);
+    padding-bottom: baseline(0.5);
   }
 
   &__description {
-    font-size: 14px;
-    line-height: 24px;
     margin-bottom: 0;
-    color: #5C5C5C;
   }
 
-  &--featured {
-    & + & {
-      border-top: 1px dotted #9B9B9B;
-    }
+  &__name {
+    margin-bottom: 12px;
 
-    .client__article {
-      padding-top: 35px;
-      padding-bottom: 36px; // for the border
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      margin-bottom: 24px;
     }
+  }
 
+  a[rel="shortlink"] {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  &--showcase {
     .client__name {
-      font-size: 48px;
-      line-height: 60px;
-      margin-bottom: 12px;
+      margin-bottom: 0;
+      font-weight: 100;
     }
 
     .client__tagline {
-      font-size: 32px;
-      line-height: 36px;
-      margin-bottom: 12px;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+
+  &--featured {
+    &:not(:last-child) {
+      border-bottom: 1px dotted #9B9B9B;
+    }    
+
+    .client__article {
+      padding-top: baseline(1);
+      padding-bottom: baseline(1);
+      margin-bottom: -1px;
+
+      @include breakpoint(map-get($breakpoints, desktop-small)) {
+        padding-top: baseline(1);
+        padding-bottom: baseline(1);
+      }
     }
 
     .client__description {
-      font-size: 21px;
-      line-height: 36px;
-      margin-bottom: 12px;
-    }
-
-    a[rel="shortlink"] {
-      text-transform: uppercase;
-      font-size: 21px;
-      line-height: 24px;
-      display: inline-block;
+      @extend %h5;
     }
   }
 
   &--private {
     .client__name {
-      font-size: 36px;
-      line-height: 48px;
+      @extend %h2;
       margin-top: 12px;
       margin-bottom: 12px;
     }
@@ -77,11 +69,13 @@
 }
 
 .clients-section {
-  &--showcase {
-    @include span(8 of 12);  
-  }
+  @include breakpoint(map-get($breakpoints, desktop-small)) {
+    &--showcase {
+      @include span(8 of 12);  
+    }
 
-  &--private {
-    @include span(4 of 12 last);
-  }  
+    &--private {
+      @include span(4 of 12 last);
+    }
+  }
 }

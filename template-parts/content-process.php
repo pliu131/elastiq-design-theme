@@ -1,7 +1,7 @@
 <section class="page-section page-section--light">
   <div class="container">
     <header class="page-section__header">
-      <h1 class="page-section__title">Our Design and Development Process</h1>
+      <h1 class="page-section__title">How We Work</h1>
     </header>
 
     <ol class="process-steps">
@@ -50,6 +50,43 @@
         <p class="process-step__content">We develop your website using the latest industry technologies and best practices. We make sure your website looks great across all devices, browsers, and screensizes with responsive web design, and optimize your website for speed and performance as well as search engine findability.</p>
       </li>
     </ol>
-  </article>
-</div>
+
+
+
+    <h3 class="page-section__title">Capabilities</h3>
+
+    <div class="capability">
+      <h4 class="capability__title">User Experience Design</h4>
+      <ul class="capability__services">
+        <li>User Research</li>
+        <li>Usability Testing</li>
+        <li>Lo-fidelity Wireframes</li>
+        <li>High-fidelity Mockups</li>
+        <li>Interactive Prototypes</li>
+        <li>Information Architecture</li>
+      </ul>
+    </div>
+
+    <div class="capability">
+      <h4 class="capability__title">Web Development</h4>
+      <ul class="capability__services">
+        <li>Front-end Development</li>
+        <li>Custom HTML, CSS, and JavaScript</li>
+        <li>Custom Shopify and Wordpress Theme Development</li>
+        <li>Bootstrap and Foundation</li>
+        <li>Search Engine Optimization</li>
+        <li>Google Analytics</li>
+      </ul>
+    </div>
+
+    <div class="capability">
+      <h4 class="capability__title">Technologies</h4>
+      <ul class="capability__services">
+        <li>Adobe Creative Suite (Photoshop, InDesign, and Illustrator)</li>
+        <li>PowerPoint and Keynote for Presentation Deck Designs</li>
+        <li>Mailchimp Campaign Management and Email Design</li>
+        <li>UXPin, Sketch, and Balsamiq</li>
+      </ul>
+    </div>
+  </div>
 </section>

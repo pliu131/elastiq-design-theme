@@ -21,8 +21,8 @@ get_header();
     <!-- section 1: main header with text -->
     <header class="page-header page-header--home">
       <div class="container">
-        <h1 class="page-header__title">A <strong>web development</strong> and <strong>user experience design studio</strong>, focused on creating  efficient and elegant solutions that <strong>solve real problems</strong> for your organization.</h1>
-        <a class="button button--large" href="#">START A PROJECT →</a>
+        <p class="page-header__description">A <strong>user experience design</strong> and <strong>web development</strong> studio, focused on creating efficient and elegant solutions that <strong>solve real problems</strong> for your organization</p>
+        <a class="typeform-share link button button--large" href="https://peterliu1.typeform.com/to/pxW6wn" data-mode="1" target="_blank">START A PROJECT →</a>
       </div>
     </header>
 
@@ -36,7 +36,6 @@ get_header();
     </section>
 
     <?php get_template_part( 'template-parts/content-process' ); ?>
-    <?php get_template_part( 'template-parts/content-capabilities' ); ?>
     <?php get_template_part( 'template-parts/content-contact' ); ?>
 
   </main><!-- #main -->

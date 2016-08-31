@@ -13,7 +13,7 @@ get_header(); ?>
   <div class="container">
     <h1 class="page-header__title">Work</h1>
     <p class="page-header__description">
-      From my time as the lead designer and front-end developer at Hipsters and Hamptonites, a boutique web design and development agency.
+      From my time as the lead designer and front-end developer at <strong>Hipsters and Hamptonites</strong>, a boutique web design and development agency.
     </p>
   </div>
 </header>
@@ -48,13 +48,13 @@ get_header(); ?>
 
         if ($showcase_work -> have_posts()) : while ($showcase_work -> have_posts()) : $showcase_work -> the_post(); 
         ?>
-        <li class="client">
+        <li class="client client--showcase">
           <article class="client__article">
-            <h2 class="client__name">
+            <h3 class="client__name">
               <a class="client__project-link" href="<?php the_field('project_link') ?>" target="_blank"><?php the_title() ?> / ⧉</a>  
-            </h2>
+            </h3>
 
-            <h3 class="client__tagline"><?php the_field('description') ?></h3>
+            <h4 class="client__tagline"><?php the_field('description') ?></h4>
             <p class="client__description">
               <?php 
               $services = wp_get_post_terms($post -> ID, 'service', array('fields' => 'names')); 
@@ -70,7 +70,7 @@ get_header(); ?>
 
   <section class="clients-section--private">
     <header class="page-section__header">
-      <h1 class="page-section__title">Notable Clients</h1>
+      <h2 class="page-section__title">Notable Clients</h2>
     </header>
 
     <ul class="clients">
@@ -84,7 +84,7 @@ get_header(); ?>
         if ($private_work -> have_posts()) : while ($private_work -> have_posts()) : $private_work -> the_post(); 
         ?>
         <li class="client client--private">
-          <h2 class="client__name"><?php the_title() ?></h2>
+          <h3 class="client__name"><?php the_title() ?></h3>
         </li>
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </ul>

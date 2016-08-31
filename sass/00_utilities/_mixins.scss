@@ -33,3 +33,39 @@
 @function baseline($multiplier: 1) {
   @return $multiplier * 24px;
 }
+
+// Font Size Mixin for Responsive Font Sizes
+// Uses the font size maps in utilities/variables.scss
+// https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+// Need to rename this shit.
+@mixin font-sizes($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint)
+      }
+      @include breakpoint($fs-breakpoint) {
+        @include make-font-sizes($fs-font-size);
+      }
+    }
+  }
+}
+
+// // Utility Function for Font Size Mixin
+// // If the map contains a line height parameter, 
+// // e.g., (24px, 1.5), it will set the line height
+@mixin make-font-sizes($fs-font-size) {
+  @if type-of($fs-font-size) == "list" {
+    font-size: rem(nth($fs-font-size, 1));
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  }
+  @else {
+    font-size: rem($fs-font-size);
+  }
+}
+

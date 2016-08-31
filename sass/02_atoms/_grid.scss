@@ -2,18 +2,10 @@
 // variables stored in a gutter-width variable
 // Placed here just so I can see it more easily
 // Settings for Susy Grid Framework
-$susy: (
-  columns: 12,
-  container: 1140px,
-  global-box-sizing: border-box,
-  column-width: 60px,
-  gutters: 20px/60px,
-  );
-
 @include border-box-sizing;
 
 .container {
   @include container;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }

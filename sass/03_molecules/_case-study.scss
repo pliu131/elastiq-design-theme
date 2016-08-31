@@ -1,14 +1,22 @@
 .case-study {
-  &__objective {
-    font-size: 48px;
-    font-weight: 400;
-  }
-
   &__content {
-    font-size: 21px;
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      @include span(isolate 10 at 1);
+    }
+
+    @include breakpoint(map-get($breakpoints, desktop-small)) {
+      @include span(isolate 8 at 3);
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 24px;
+      display: block;
+    }
     
     h3 {
       font-size: 32px;
+      margin-bottom: 24px;
       color: black;
       font-weight: 400;
     }

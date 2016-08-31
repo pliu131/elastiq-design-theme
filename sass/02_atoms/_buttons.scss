@@ -7,9 +7,18 @@
   color: white;
   letter-spacing: 0.02em;
   font-weight: 100;
-  text-transform: uppercase;
+  line-height: 24px;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: darken($color__accent, 20%);
+  }
 
   &--large {
     padding: 12px 48px;
+    font-size: 21px;
   }  
 }
