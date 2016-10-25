@@ -11,8 +11,9 @@
 
 <header class="page-header">
   <div class="container">
+    <span class="page-section__title">Work</span>
     <h1 class="page-header__title">
-      Work / <br><?php the_title(); ?>
+      <?php the_title(); ?>
     </h1>
     <p class="page-header__description">
       <?php the_field('case_study_objective'); ?>
@@ -47,7 +48,7 @@
           ?>
 
           <a href="<?php the_field('project_link'); ?>">Check out the Project Here →</a>
-        </div><!-- .entry-content -->
+        </div><!-- .case-study__content -->
 
         <footer class="entry-footer" style="display: none;">
           <?php elastiqdesign_entry_footer(); ?>

@@ -3,6 +3,17 @@
   padding-top: baseline(2);
   padding-bottom: baseline(2);
 
+  &--white {
+    background-color: white;
+    background-image: none;
+  }
+
+  &--blog {
+    padding-top: baseline(1) !important;
+    padding-bottom: baseline(1) !important;
+    text-align: center;
+  }
+
   @include breakpoint(map-get($breakpoints, tablet)) {
     padding-top: baseline(3);
     padding-bottom: baseline(3);

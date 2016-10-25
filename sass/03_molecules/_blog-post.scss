@@ -1,0 +1,47 @@
+// These styles are repeated from .case-study/
+// Fix this later
+.blog-post {
+  &__content {
+    @include breakpoint(map-get($breakpoints, tablet)) {
+      @include span(isolate 10 at 2);
+    }
+
+    @include breakpoint(map-get($breakpoints, desktop-small)) {
+      @include span(isolate 8 at 3);
+    }
+
+    p:first-of-type {
+      font-size: 1.25rem;
+      line-height: 32px;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 24px;
+      display: block;
+    }
+    
+    h3 {
+      font-size: 32px;
+      margin-bottom: 24px;
+      color: black;
+      font-weight: 400;
+    }
+  }
+}
+
+.blog-preview {
+  @include clearfix;
+  padding-top: baseline(1.5);
+  padding-bottom: baseline(1.5);
+
+  @include breakpoint(map-get($breakpoints, tablet)) {
+    &__image {
+      @include span(4 of 12);
+    }
+
+    &__content {
+      @include span(8 of 12 last);
+    }
+  }
+}

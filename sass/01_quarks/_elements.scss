@@ -22,6 +22,27 @@ blockquote, q {
   }
 }
 
+blockquote {
+  background: $color__background-light;
+  border-left: 10px solid $color__accent;
+  margin: 1.5em 0.5em;
+  padding: 1em 2em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $color__text-dark;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
 hr {
   background-color: $color__background-hr;
   border: 0;

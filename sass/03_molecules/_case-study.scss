@@ -1,3 +1,4 @@
+// Change this later to apply to both blogs
 .case-study {
   &__content {
     @include breakpoint(map-get($breakpoints, tablet)) {
