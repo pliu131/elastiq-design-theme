@@ -30,9 +30,11 @@
 				<div class="site-branding">
 					<?php
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">elastiq<span>design</span></a></h1>
+						<h1 class="site-title"><a class="site-title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<span class="elastiq">elastiq</span><span class="design">design</span>
+						</a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">elastiq<span>design</span></a></p>
+						<p class="site-title"><a class="site-title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="elastiq">elastiq</span><span class="design">design</span></a></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 

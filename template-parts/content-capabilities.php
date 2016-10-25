@@ -1,4 +1,4 @@
-<!-- There's definitely a way to update this using Wordpress fields -->
+<!-- There's definitely a way to update this using Wordpress fields, but I can worry about that when the time comes -->
 <section class="page-section page-section--dark">
   <div class="container">
     <header class="page-section__header">
