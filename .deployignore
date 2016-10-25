@@ -5,3 +5,8 @@ node_modules/**
 ## Files to ignore
 Gruntfile.js
 package.json
+.deployignore
+.gitignore
+.jscsrc
+.jshintignore
+.DS_Store
