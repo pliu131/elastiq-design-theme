@@ -1,0 +1,7 @@
+## Directories to ignore
+sass/**
+node_modules/**
+
+## Files to ignore
+Gruntfile.js
+package.json
