@@ -25,6 +25,14 @@
   <article class="case-study" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="container">
       <div class="case-study__content">
+        <h3>Responsibilities</h3>
+        <p class="page-header__description">
+          <?php 
+              $services = wp_get_post_terms($post -> ID, 'service', array('fields' => 'names')); 
+              $services_string = implode(', ', $services);
+              echo $services_string;
+              ?>
+        </p>
         <?php
         the_content( sprintf(
           /* translators: %s: Name of current post. */
