@@ -30,7 +30,14 @@
           <h4 class="page-section__title">Get In Touch</h4>
           <ul class="contact-items">
             <li><strong>Email: </strong><a href="mailto:hello@elastiqdesign.com">hello@elastiqdesign.com</a></li>
-            <li><strong>Telephone: </strong><a href="tel:3473500489">347.350.0849</a>  </li>
+            <li><strong>Telephone: </strong><a href="tel:+13474913082">+1.347.491.3082</a></li>
+          </ul>
+
+          <h4 class="page-section__title">Get Connected</h4>
+          <ul class="social-links">
+            <li class="social-link"><a href="https://www.facebook.com/elastiqdesign/"><span class="screen-reader-text">Facebook</span><i class="fa fa-facebook"></i></a></li>
+            <li class="social-link"><a href="https://twitter.com/ElastiqDesign"><span class="screen-reader-text">Twitter</span><i class="fa fa-twitter"></i></a></li>
+            <li class="social-link"><a href="https://www.instagram.com/elastiqdesign/"><span class="screen-reader-text">Instagram</span><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
       </section>

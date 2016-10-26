@@ -18,6 +18,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 	<script src="https://use.typekit.net/fxa8pns.js"></script>
+	<script src="https://use.fontawesome.com/6f7cd88ea7.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

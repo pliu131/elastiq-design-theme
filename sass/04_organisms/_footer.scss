@@ -47,3 +47,18 @@
   list-style: none;
 }
 
+.social-links {
+  @extend %list-reset;
+  list-style: none;
+  text-align: center;
+
+  .social-link {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+
