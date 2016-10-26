@@ -32,8 +32,18 @@
 
 .blog-preview {
   @include clearfix;
-  padding-top: baseline(1.5);
-  padding-bottom: baseline(1.5);
+  padding-top: baseline(0.5);
+  padding-bottom: baseline(0.5);
+
+  @include breakpoint(map-get($breakpoints, tablet)) {  
+    padding-top: baseline(1);
+    padding-bottom: baseline(1);
+  }
+
+  @include breakpoint(map-get($breakpoints, desktop-small)) {  
+    padding-top: baseline(1.5);
+    padding-bottom: baseline(1.5);
+  }
 
   @include breakpoint(map-get($breakpoints, tablet)) {
     &__image {
