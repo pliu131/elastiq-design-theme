@@ -20,5 +20,10 @@
   &--large {
     padding: 12px 48px;
     font-size: 21px;
-  }  
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
 }

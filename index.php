@@ -20,6 +20,10 @@ get_header(); ?>
 			<div class="container">
 				<h1 class="page-header__title">Elastiq Design Blog</h1>
 				<p class="page-header__description">Insights for business, design, and technology</p>
+
+				<hr>
+		
+				<?php get_template_part( 'template-parts/mailchimp-form' ) ?>
 			</div>
 		</header>
 		
@@ -36,5 +40,5 @@ get_header(); ?>
 		</main>
 	</div>
 
-<?php
+	<?php
 	get_footer();

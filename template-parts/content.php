@@ -54,4 +54,10 @@
 			</div>
 		</article><!-- #post-## -->
 	</section><!-- .entry-content -->
+
+<div class="page-section page-section--light">
+	<div class="container">
+		<?php get_template_part( 'template-parts/mailchimp-form' ) ?>
+	</div>
+</div>
 	

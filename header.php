@@ -52,7 +52,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '☰ Menu', 'elastiqdesign' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<a class="typeform-share link button button--project" href="https://peterliu1.typeform.com/to/pxW6wn" data-mode="1" target="_blank">Get in Touch</a>
+					<a class="typeform-share link button button--project" href="https://peterliu1.typeform.com/to/pxW6wn" data-mode="1" target="_blank">Let's Talk</a>
 				</nav><!-- #site-navigation -->
 			</div><!-- .container --> 
 		</header><!-- #masthead -->
