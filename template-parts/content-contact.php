@@ -6,7 +6,7 @@
 
     <p class="h2">Tell us about your project.</p>
 
-    <a class="typeform-share link button button--large" href="https://peterliu1.typeform.com/to/pxW6wn" data-mode="1" target="_blank">GET STARTED →</a>
+    <a class="typeform-share link button button--large" href="https://peterliu1.typeform.com/to/pxW6wn" data-mode="1" target="_blank">GET A FREE CONSULTATION →</a>
     </a>
   </div>
 </section>
